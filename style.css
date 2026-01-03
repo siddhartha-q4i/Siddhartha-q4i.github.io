@@ -54,11 +54,17 @@ header {
     transition: border-color 0.2s ease;
 }
 
+/* Highlight the current page in nav */
+.nav-list a.active {
+    border-bottom: 2px solid #0056b3;
+    font-weight: 600;
+}
+
 .nav-list a:hover {
     border-bottom: 2px solid #0056b3;
 }
 
-/* ===== Hero ===== */
+/* ===== Hero (only on index.html) ===== */
 .hero {
     text-align: center;
     margin-bottom: 50px;
@@ -85,11 +91,11 @@ header {
 }
 
 /* ===== Sections ===== */
-.bio {
+.bio, .content-section {
     margin-bottom: 45px;
 }
 
-.bio h2 {
+.bio h2, .content-section h2 {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 12px;
@@ -97,23 +103,18 @@ header {
     padding-bottom: 6px;
 }
 
-.bio p {
+.bio p, .content-section p {
     margin-bottom: 12px;
     text-align: justify;
 }
 
-.bio ul {
+.bio ul, .content-section ul {
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.bio ul li {
+.bio ul li, .content-section ul li {
     margin-bottom: 6px;
-}
-
-/* ===== Contact ===== */
-#contact p {
-    font-size: 0.95rem;
 }
 
 /* ===== Footer ===== */
