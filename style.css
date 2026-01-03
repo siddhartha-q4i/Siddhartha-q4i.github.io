@@ -1,6 +1,6 @@
-/* =====================================================
+/* =========================================================
    Reset & Base
-===================================================== */
+========================================================= */
 
 * {
     margin: 0;
@@ -14,36 +14,36 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #000000;
-    color: #eaeaea;
-    line-height: 1.75;
+    background-color: #000;
+    color: #f0f0f0;
+    line-height: 1.7;
     font-size: 16px;
 }
 
-/* =====================================================
+/* =========================================================
    Layout
-===================================================== */
+========================================================= */
 
 header {
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #333;
     padding: 16px 0;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 }
 
 .main-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 22px;
 }
 
-/* =====================================================
+/* =========================================================
    Navigation
-===================================================== */
+========================================================= */
 
 .nav-bar {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 22px;
 }
 
 .nav-list {
@@ -56,26 +56,22 @@ header {
 .nav-list a {
     text-decoration: none;
     font-size: 0.95rem;
-    color: #dddddd;
+    color: #e0e0e0;
     font-weight: 500;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.nav-list a:hover {
-    color: #6fb7ff;
-}
-
+.nav-list a:hover,
 .nav-list a.active {
     color: #6fb7ff;
     border-bottom-color: #6fb7ff;
-    font-weight: 600;
 }
 
-/* =====================================================
+/* =========================================================
    Links
-===================================================== */
+========================================================= */
 
 a {
     color: #4fa3ff;
@@ -92,13 +88,13 @@ a:hover {
     font-weight: 500;
 }
 
-/* =====================================================
+/* =========================================================
    Hero Section
-===================================================== */
+========================================================= */
 
 .hero {
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
 }
 
 .profile-img {
@@ -107,11 +103,10 @@ a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 22px;
-    border: 2px solid #3a3a3a;
 }
 
 .name {
-    font-size: 2.35rem;
+    font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -121,65 +116,62 @@ a:hover {
     color: #bdbdbd;
 }
 
-/* =====================================================
-   Section Styling (Global)
-===================================================== */
+/* =========================================================
+   Sections
+========================================================= */
 
 .bio,
 .team-bio,
 .team-section,
-.content-section,
 .pub-section {
-    margin-bottom: 72px;
+    margin-bottom: 65px;
 }
 
 .bio h2,
 .team-bio h2,
 .team-section h2,
-.content-section h2,
 .pub-section h2 {
     font-size: 1.45rem;
     font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #333;
 }
 
 .bio p,
 .team-bio p,
-.content-section p,
 .pub-section p {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     text-align: justify;
-    color: #d8d8d8;
+    color: #f0f0f0;
 }
 
-/* =====================================================
+/* =========================================================
    Lists
-===================================================== */
+========================================================= */
 
 ul {
     margin-left: 22px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 ul li {
     margin-bottom: 8px;
 }
 
-/* =====================================================
+/* =========================================================
    Team Page
-===================================================== */
+========================================================= */
 
 .subsection {
-    margin-top: 36px;
+    margin-top: 34px;
 }
 
 .subsection h3 {
     font-size: 1.18rem;
     font-weight: 500;
-    margin-bottom: 16px;
-    color: #f0f0f0;
+    margin-bottom: 14px;
+    color: #e6e6e6;
 }
 
 .member-list {
@@ -188,13 +180,8 @@ ul li {
 }
 
 .member {
-    padding: 10px 0;
-    margin-bottom: 10px;
-    border-bottom: 1px dashed #2a2a2a;
-}
-
-.member:last-child {
-    border-bottom: none;
+    margin-bottom: 16px;
+    line-height: 1.55;
 }
 
 .member strong {
@@ -206,26 +193,26 @@ ul li {
 
 .member span {
     display: block;
-    margin-top: 4px;
+    margin-top: 3px;
     font-size: 0.92rem;
-    color: #b5b5b5;
+    color: #b8b8b8;
 }
 
-/* =====================================================
+/* =========================================================
    Publications
-===================================================== */
+========================================================= */
 
 .pub-link {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 1rem;
 }
 
 .pub-link svg {
     width: 26px;
     height: 26px;
-    margin-right: 12px;
+    margin-right: 10px;
     fill: #6fb7ff;
 }
 
@@ -233,22 +220,22 @@ ul li {
     fill: #9fd0ff;
 }
 
-/* =====================================================
+/* =========================================================
    Footer
-===================================================== */
+========================================================= */
 
 .footer {
-    border-top: 1px solid #2a2a2a;
-    margin-top: 90px;
-    padding: 26px 0;
+    border-top: 1px solid #333;
+    margin-top: 70px;
+    padding: 22px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #a8a8a8;
+    color: #bdbdbd;
 }
 
-/* =====================================================
+/* =========================================================
    Responsive
-===================================================== */
+========================================================= */
 
 @media (max-width: 700px) {
     .nav-list {
