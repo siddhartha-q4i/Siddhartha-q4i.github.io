@@ -11,15 +11,15 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222;
+    background-color: #000000; /* black background */
+    color: #f0f0f0; /* light text for readability */
     line-height: 1.65;
     font-size: 16px;
 }
 
 /* ===== Layout ===== */
 header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
     padding: 15px 0;
     margin-bottom: 40px;
 }
@@ -47,21 +47,20 @@ header {
 .nav-list a {
     text-decoration: none;
     font-size: 0.95rem;
-    color: #222;
+    color: #f0f0f0;
     font-weight: 500;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease;
 }
 
-/* Highlight the current page in nav */
 .nav-list a.active {
-    border-bottom: 2px solid #0056b3;
+    border-bottom: 2px solid #1e90ff; /* blue highlight for active page */
     font-weight: 600;
 }
 
 .nav-list a:hover {
-    border-bottom: 2px solid #0056b3;
+    border-bottom: 2px solid #1e90ff;
 }
 
 /* ===== Hero (only on index.html) ===== */
@@ -76,6 +75,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    border: 3px solid #f0f0f0; /* subtle border for visibility */
 }
 
 .name {
@@ -86,7 +86,7 @@ header {
 
 .role {
     font-size: 1rem;
-    color: #444;
+    color: #ccc;
     margin-bottom: 4px;
 }
 
@@ -99,13 +99,14 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 12px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
     padding-bottom: 6px;
 }
 
 .bio p, .content-section p {
     margin-bottom: 12px;
     text-align: justify;
+    color: #ddd;
 }
 
 .bio ul, .content-section ul {
@@ -117,14 +118,24 @@ header {
     margin-bottom: 6px;
 }
 
+/* Links inside content */
+.bio a, .content-section a {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+.bio a:hover, .content-section a:hover {
+    color: #63b3ed;
+}
+
 /* ===== Footer ===== */
 .footer {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #444;
     margin-top: 60px;
     padding: 20px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #555;
+    color: #aaa;
 }
 
 /* ===== Responsive ===== */
