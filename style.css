@@ -1,4 +1,7 @@
-/* ===== Reset & Base ===== */
+/* =====================================================
+   Reset & Base
+===================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,62 +14,91 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #000000; /* black background */
-    color: #f0f0f0; /* light text for readability */
-    line-height: 1.65;
+    background-color: #000000;
+    color: #eaeaea;
+    line-height: 1.75;
     font-size: 16px;
 }
 
-/* ===== Layout ===== */
+/* =====================================================
+   Layout
+===================================================== */
+
 header {
-    border-bottom: 1px solid #444;
-    padding: 15px 0;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 16px 0;
+    margin-bottom: 56px;
 }
 
 .main-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
-/* ===== Navigation ===== */
+/* =====================================================
+   Navigation
+===================================================== */
+
 .nav-bar {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 28px;
 }
 
 .nav-list a {
     text-decoration: none;
     font-size: 0.95rem;
-    color: #f0f0f0;
+    color: #dddddd;
     font-weight: 500;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease;
-}
-
-.nav-list a.active {
-    border-bottom: 2px solid #1e90ff; /* blue highlight for active page */
-    font-weight: 600;
+    transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-list a:hover {
-    border-bottom: 2px solid #1e90ff;
+    color: #6fb7ff;
 }
 
-/* ===== Hero (only on index.html) ===== */
+.nav-list a.active {
+    color: #6fb7ff;
+    border-bottom-color: #6fb7ff;
+    font-weight: 600;
+}
+
+/* =====================================================
+   Links
+===================================================== */
+
+a {
+    color: #4fa3ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8cc7ff;
+    text-decoration: underline;
+}
+
+.team-bio a {
+    color: #6fb7ff;
+    font-weight: 500;
+}
+
+/* =====================================================
+   Hero Section
+===================================================== */
+
 .hero {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 72px;
 }
 
 .profile-img {
@@ -74,102 +106,159 @@ header {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #f0f0f0; /* subtle border for visibility */
+    margin-bottom: 22px;
+    border: 2px solid #3a3a3a;
 }
 
 .name {
-    font-size: 2.2rem;
+    font-size: 2.35rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .role {
     font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 4px;
+    color: #bdbdbd;
 }
 
-/* ===== Sections ===== */
-.bio, .content-section {
-    margin-bottom: 45px;
+/* =====================================================
+   Section Styling (Global)
+===================================================== */
+
+.bio,
+.team-bio,
+.team-section,
+.content-section,
+.pub-section {
+    margin-bottom: 72px;
 }
 
-.bio h2, .content-section h2 {
-    font-size: 1.4rem;
+.bio h2,
+.team-bio h2,
+.team-section h2,
+.content-section h2,
+.pub-section h2 {
+    font-size: 1.45rem;
     font-weight: 600;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 6px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a2a;
 }
 
-.bio p, .content-section p {
-    margin-bottom: 12px;
+.bio p,
+.team-bio p,
+.content-section p,
+.pub-section p {
+    margin-bottom: 16px;
     text-align: justify;
-    color: #ddd;
+    color: #d8d8d8;
 }
 
-.bio ul, .content-section ul {
-    margin-left: 20px;
-    margin-top: 10px;
+/* =====================================================
+   Lists
+===================================================== */
+
+ul {
+    margin-left: 22px;
+    margin-top: 12px;
 }
 
-.bio ul li, .content-section ul li {
-    margin-bottom: 6px;
+ul li {
+    margin-bottom: 8px;
 }
 
-/* Links inside content */
-.bio a, .content-section a {
-    color: #1e90ff;
-    text-decoration: underline;
+/* =====================================================
+   Team Page
+===================================================== */
+
+.subsection {
+    margin-top: 36px;
 }
 
-.bio a:hover, .content-section a:hover {
-    color: #63b3ed;
+.subsection h3 {
+    font-size: 1.18rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #f0f0f0;
 }
 
-/* ===== Footer ===== */
+.member-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.member {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #2a2a2a;
+}
+
+.member:last-child {
+    border-bottom: none;
+}
+
+.member strong {
+    display: block;
+    font-size: 1.06rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.member span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: #b5b5b5;
+}
+
+/* =====================================================
+   Publications
+===================================================== */
+
+.pub-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.pub-link svg {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+    fill: #6fb7ff;
+}
+
+.pub-link:hover svg {
+    fill: #9fd0ff;
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
 .footer {
-    border-top: 1px solid #444;
-    margin-top: 60px;
-    padding: 20px 0;
+    border-top: 1px solid #2a2a2a;
+    margin-top: 90px;
+    padding: 26px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #aaa;
+    color: #a8a8a8;
 }
 
-/* ===== Default links ===== */
-a {
-    color: #1e90ff;
-    text-decoration: none;
-}
+/* =====================================================
+   Responsive
+===================================================== */
 
-a:hover {
-    color: #63b3ed;
-    text-decoration: underline;
-}
-
-/* Slightly brighter PI link in team bio */
-.team-bio a {
-    color: #6fb7ff;     /* brighter than normal links */
-    font-weight: 500;
-}
-
-.team-bio a:hover {
-    color: #9fd0ff;
-}
-
-
-/* ===== Responsive ===== */
 @media (max-width: 700px) {
     .nav-list {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 16px;
     }
 
     .name {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .profile-img {
