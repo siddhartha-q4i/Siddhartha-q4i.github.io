@@ -138,6 +138,28 @@ header {
     color: #aaa;
 }
 
+/* ===== Default links ===== */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #63b3ed;
+    text-decoration: underline;
+}
+
+/* Slightly brighter PI link in team bio */
+.team-bio a {
+    color: #6fb7ff;     /* brighter than normal links */
+    font-weight: 500;
+}
+
+.team-bio a:hover {
+    color: #9fd0ff;
+}
+
+
 /* ===== Responsive ===== */
 @media (max-width: 700px) {
     .nav-list {
