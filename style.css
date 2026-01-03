@@ -167,6 +167,10 @@ ul li {
     margin-top: 34px;
 }
 
+.team-section .subsection {
+    margin-bottom: 48px;
+}
+
 .subsection h3 {
     font-size: 1.18rem;
     font-weight: 500;
