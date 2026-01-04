@@ -267,8 +267,8 @@ ul li {
     padding: 28px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #bdbdbd;
-    background-color: #000; /* dark black background */
+    color: #bdbdbd;          /* light text */
+    background-color: #000;   /* dark background */
 }
 
 .footer h3 {
