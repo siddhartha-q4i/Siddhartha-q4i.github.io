@@ -268,7 +268,7 @@ ul li {
     text-align: center;
     font-size: 0.9rem;
     color: #bdbdbd;
-    background-color: #000;
+    background-color: #000; /* dark black background */
 }
 
 .footer h3 {
@@ -280,12 +280,14 @@ ul li {
 
 .footer a {
     color: #6fb7ff;
+    text-decoration: none;
 }
 
 .footer a:hover {
     color: #9fd0ff;
     text-decoration: underline;
 }
+
 
 /* =========================================================
    Responsive
